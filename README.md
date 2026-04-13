@@ -20,3 +20,6 @@ The provided Jupyter notebook (`INSIDE_Team_ProjectX.ipynb`) demonstrates halluc
 - It examines the dense semantic information retained within the models.
 - It applies the **EigenScore** metric to evaluate the self-consistency of model responses by exploiting the eigenvalues of the responses' covariance matrix in the dense embedding space.
 - It explores a **test-time feature clipping approach** to truncate extreme activations in the internal states, which effectively reduces overconfident generations and aids in detecting hallucinations.
+
+### Testing INSIDE in RAG Architecture
+In addition to the core methodology, this project extends the evaluation by testing the INSIDE framework within a **Retrieval-Augmented Generation (RAG)** architecture. We evaluate the effectiveness of hallucination detection when the LLM is grounded with external context, investigating how internal state patterns and metrics like EigenScore behave during retrieval-augmented reasoning.
